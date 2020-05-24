@@ -1,7 +1,7 @@
 # CarRentalService
 
-Basic authentication has been implemented in the project. Username - "admin", password - "password".
 I have used MVC architecture. Models - All are located in models folder, Controllers - All are located in the routes folder.
+To run project do npm install and then npm start.
 
 Server configured for only http and no https. Date format preferrably should be ISO format.
 
@@ -13,7 +13,7 @@ Car Operations:
 For All cars:
 Example url - http://18.191.175.227:3000/cars 
 get request - It will return all cars.
-post request - It can add new cars. Fields required in request : model, vehicleNo, city, price, seating capacity
+post request - It can add new cars. Fields required in request : model, vehicleNo, color, price, seating capacity, name, description.
 put request - Not supported
 delete request - Will delete all cars
 
@@ -28,7 +28,7 @@ Booking/Transaction Operations:
 For all Transactions:
 Example url - http://18.191.175.227:3000/transactions
 get request - It will return all transactions.
-post request - It can add new bookings. Fields required in request : name, vehicleNo, city, phoneNo, issueDate, returnDate
+post request - It can add new bookings. Fields required in request : name, vehicleNo, phoneNo, issueDate, returnDate
 put request - Not supported
 delete request - Will delete all transactions
 
@@ -47,7 +47,7 @@ Search Operations:
 For all Searches:
 Example url - http://18.191.175.227:3000/searches
 
-get Request - Sending issueDate and return date is mandatory in request body. Other parameters on which search can be based are seatingCap, model, city. It will return all available cars for the given request.
+get Request - Sending issueDate and return date is mandatory in request body. Other parameters on which search can be based are seatingCap. It will return all available cars for the given request.
 
 Any doubts? Contact me at 9871450094.
 
